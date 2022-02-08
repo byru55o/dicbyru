@@ -1,6 +1,6 @@
 # dicbyru
 ## Introduction
-Generates password lists/dictionaries based on keywords. It uses the keywords and adds capital letters, numbers and special characters to create possible passwords. These passwords are stored in a file with universal formatting, in order to be read and used by a brute-force program such as hydra.  
+Generates password lists/dictionaries based on keywords. It uses the keywords and adds capital letters, numbers and special characters to create possible passwords. These passwords are stored in a file with universal formatting, in order to be read and used by a brute-force program such as [hydra](https://github.com/vanhauser-thc/thc-hydra).  
 
 ## Usage
 - Run the script with the `python3` interpreter installed on your system:  
