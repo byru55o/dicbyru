@@ -18,7 +18,7 @@ python dicbyru.py
 #### Output
 The file where the dictionary will be stored.
 #### Keywords
-The strings, separated by a `,` that are used to generate the possible passwords.
+The strings, separated by a `,` that are used to generate the possible passwords.  
 **NOTE:** a space after the `,` is **not** needed: `password,pass,mayonnaise`
 #### Auto caps
 If _auto caps_ equals `1`, every keyword will be reproduced with the firt character in uppercase **and** also with every character in uppercase.
@@ -39,5 +39,5 @@ pip install colorama
 
 ## Additional info
 Please, if you encounter a bug, or have a suggestion, report it to [issues](https://github.com/byru55o/dicbyru/issues) or create a [pull request](https://github.com/byru55o/dicbyru/pulls)  
-This program was made by [ru55o](https://github.com/byru55o) using [Pop!\_OS](https://pop.system76.com/) and [Gentoo Linux](https://gentoo.org/) machines and [PyCharm](https://www.jetbrains.com/pycharm/) and [micro](https://micro-editor.github.io/) as IDE/editors.
+This program was made by [ru55o](https://github.com/byru55o) using [Pop!\_OS](https://pop.system76.com/) and [Gentoo Linux](https://gentoo.org/) machines and [PyCharm](https://www.jetbrains.com/pycharm/) and [micro](https://micro-editor.github.io/) as IDE/editors.  
 It is licensed under the GPL (3.0) and is thus _free software_.
