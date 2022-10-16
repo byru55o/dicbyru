@@ -11,6 +11,7 @@ def banner():
 
 def main():
     num = 0
+    specialchars = [".", ",", "!", "?", "#", "$", "@", "+", "*", "=", "%"]
     output = input(Fore.CYAN + "DICTIONARY OUTPUT: ")
     keywords = input(Fore.CYAN + "ENTER KEYWORDS SEPARATED WITH \",\": ")
     capitalize = input(Fore.CYAN + "AUTO CAPS MODE [1] // [0]: ")
@@ -19,45 +20,22 @@ def main():
     keylist = keywords.split(",")
     for key in keylist:
         with open(output, "a") as dictionary:
-            dictionary.write(key)
-            dictionary.write("\n")
+            dictionary.write(key + "\n")
     while num <= int(maxnumber):
         for key in keylist:
             key = key + str(num)
             with open(output, "a") as dictionary:
-                dictionary.write(key)
-                dictionary.write("\n")
+                dictionary.write(key + "\n")
                 if capitalize == "1":
-                    dictionary.write(key.capitalize())
-                    dictionary.write("\n")
-                    dictionary.write(key.upper())
-                    dictionary.write("\n")
+                    dictionary.write(key.capitalize() + "\n")
+                    dictionary.write(key.upper() + "\n")
                 if specialchar == "1":
-                    dictionary.write(key + ".")
-                    dictionary.write("\n")
-                    dictionary.write(key + ",")
-                    dictionary.write("\n")
-                    dictionary.write(key + "!")
-                    dictionary.write("\n")
-                    dictionary.write(key + "?")
-                    dictionary.write("\n")
-                    dictionary.write(key + "#")
-                    dictionary.write("\n")
-                    dictionary.write(key + "$")
-                    dictionary.write("\n")
-                    dictionary.write(key + "@")
-                    dictionary.write("\n")
-                    dictionary.write(key + "+")
-                    dictionary.write("\n")
-                    dictionary.write(key + "*")
-                    dictionary.write("\n")
-                    dictionary.write(key + "=")
-                    dictionary.write("\n")
-                    dictionary.write(key + "%")
-                    dictionary.write("\n")
-        num = num + 1
+                    for char in specialchars:
+                        dictionary.write(key + char + "\n")
+        num += 1
     print(Back.RED + "DICTIONARY CREATED SUCCESSFULLY:")
     print(Fore.LIGHTGREEN_EX + "saved in " + output)
+
 
 banner()
 
