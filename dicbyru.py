@@ -1,12 +1,6 @@
 from colorama import Fore, Back, init
-from pyfiglet import Figlet
 
 init(autoreset=True)
-
-
-def banner():
-    custom_fig = Figlet(font='lean')
-    print(Fore.RED + custom_fig.renderText("DicByRu"))
 
 
 def main():
